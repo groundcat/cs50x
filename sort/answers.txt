@@ -1,0 +1,23 @@
+sort1 uses: bubble sort
+
+How do you know?: Bubble sort works fastest (n) when the list is already sorted. It took the shortest amount of time to sort the list 'sorted50000.txt'.
+
+sort2 uses: merge sort
+
+How do you know?: In all case scenarios, sort2 took the shortest amount of time because no matter how the list is, it takes (n log n) times to run for both upper and lower boundaries.
+
+sort3 uses: selection sort
+
+How do you know?: The running time for selection sort is (n^2) for both upper and lower boundaries, making it the slowest method of sorting.
+
+time ./sort1 random50000.txt # real    0m8.486s bubble
+time ./sort2 random50000.txt # real    0m0.845s merge
+time ./sort3 random50000.txt # real    0m3.822s selection
+
+time ./sort1 reversed50000.txt # real    0m6.352s
+time ./sort2 reversed50000.txt # real    0m1.095s
+time ./sort3 reversed50000.txt # real    0m3.883s
+
+time ./sort1 sorted50000.txt # real    0m1.305s
+time ./sort2 sorted50000.txt # real    0m1.121s
+time ./sort3 sorted50000.txt # real    0m3.888s
